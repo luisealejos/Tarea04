@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/txtName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="30dp"
+	        android:text="@string/hello_world"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/txtDescription"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtName"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginRight="45dp"
+	        android:layout_marginLeft="45dp"
+	        android:text="@string/hello_world" />
+	    
+	    <TextView
+	        android:id="@+id/txtAddress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtDescription"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/hello_world" />
+	
+	    <TextView
+	        android:id="@+id/txtTitleHorario"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtAddress"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="30dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:text="@string/horario" />
+	
+	    <TextView
+	        android:id="@+id/txtHorario"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtTitleHorario"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/hello_world" />
+	    
+	    <TextView
+	        android:id="@+id/txtTitleContact"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtHorario"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="30dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:text="@string/contacto" />
+	    
+	    <TextView
+	        android:id="@+id/txtTelephone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtTitleContact"
+	        android:layout_marginLeft="80dp"
+	        android:layout_marginTop="10dp"
+	        android:text="@string/hello_world" />
+	    
+	    <TextView
+	        android:id="@+id/txtWebsite"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtTelephone"
+	        android:layout_marginLeft="80dp"
+	        android:layout_marginTop="5dp"
+	        android:text="@string/hello_world" />
+	
+	    <TextView
+	        android:id="@+id/txtEmail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtWebsite"
+	        android:layout_marginLeft="80dp"
+	        android:layout_marginTop="5dp"
+	        android:text="@string/hello_world" />
+	    
+	    <fragment
+		    android:id="@+id/fragment1"
+		    android:name="com.example.tarea04.fragments.ComentFragment"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/txtEmail"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="15dp" />
+	
+	</RelativeLayout>
+
+</ScrollView>
